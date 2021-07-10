@@ -1,0 +1,125 @@
+{% extends 'bootstrap/base.html' %}
+
+
+
+{% block title %} Andreadakis Ioannis {% endblock %}
+{% block styles %}{{super()}}<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}<script src="https://kit.fontawesome.com/ccc546917d.js" crossorigin="anonymous"></script>{% endblock %}
+
+
+
+
+{% block content %}
+<section id="header">
+
+<div class="container-fluid">
+      <div class="row">
+      <div class="col-sm-4 pseudo-nav">
+        <a class="pseudo-nav navtext logo" href="#about-me" style="font-weight:400">IA</a>
+      </div>
+      <div class="col-sm-4 pseudo-nav">
+        <a class="pseudo-nav navtext" href="#experience">Experience</a>
+      </div>
+      <div class="col-sm-4 pseudo-nav">
+       <a class="pseudo-nav navtext" href="#contact">Contact</a>
+      </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+<section id="about-me">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 about-me">
+          <h1 class="about-me-header">About Me</h1>
+<p class="about-me-paragraph">Always having been passionate about problem solving and algorithms, during the third year of my biotechnology studies, I was introduced to Python, as part of a university course on programming. Its simple syntax offered a friendly introduction to programming, and I took advantage of that and started learning it, and growing accustomed to some of its powerful tools and useful libraries and frameworks.
+    Fast forward 3 years, and after having had online courses, as well as personal projects and research, I am now comfortable using Python for multiple purposes, including some machine learning algorithms (mainly supervised), data visualization, automating tasks, web-scraping, web development and web services. My goal is to enter the world of professional use of this beautiful and powerful  tool to do what drives me, solve problems and offer solutions, as well as develop my skillset.</p>       </div>
+        <div class="col-md-6">
+          <img src="{{url_for('static', filename='bio-img.jpg')}}" class="bio-img">
+        </div>
+
+      </div>
+
+    </div>
+
+</section>
+
+<section id="experience">
+  <div class="exp-header">
+    <h1 class="pseudo-nav navtext section-header">Experience and Skills</h1>
+  </div>
+  <div class="exp-content">
+    <h1>Working experience</h1>
+      <ul class="exp-list">
+        <li>Logistics Assistant Manager Trainee • <a style="color:#C7F9CC" href="https://www.dashome.gr/">AKRIDAS BROS SA</a>• Athens <br>October 2020 - January 2021</li>
+        <li>Data processing in spreadsheet and database •<a style="color:#C7F9CC" href="https://edcm.edu.gr/">Postgraduate Program “Environmental, Disaster and Crisis Management Strategies”</a>  • Department of Geology and Geoenvironment, National and Kapodistrian University of Athens <br> October 2015 - January 2017</li>
+      </ul>
+    <h1>Skills</h1>
+      <ul class="exp-list">
+        <li>Microsoft Office</li>
+        <li>Python, during online courses, a university course, working on a research paper and through several personal projects,<br>
+        various degrees of familiarity have been achieved with, among others, the following python packages, libraries and frameworks:
+            <ul class="exp-list inner">
+              <li>Pandas</li>
+              <li>Scikit-Learn</li>
+              <li>Matplotlib</li>
+              <li>Numpy</li>
+              <li>Seaborn</li>
+              <li>Plotly</li>
+              <li>Flask</li>
+              <li>Bootstrap 4(Flask)</li>
+              <li>SQLAlchemy</li>
+              <li>WTForms</li>
+              <li>BeautifulSoup4</li>
+              <li>Selenium</li>
+              <li>Tkinter</li>
+                <li>Werkzeug</li>
+                <li>python-dotenv</li>
+                <li>smtplib</li>
+
+
+            </ul>
+        </li>
+        <li>Some experience working with HTML5 and CSS3</li>
+        <li><a style="color:#C7F9CC" href="https://www.researchgate.net/publication/345004207_The_COVID-19_Pandemic_Initial_Outbreak_in_Greece_in_Spring_2020_Public_Perceptions_and_Behaviour">Co-author of "The COVID-19 Pandemic Initial Outbreak in Greece in Spring 2020. Public Perceptions and Behaviour"</a></li>
+        <li>Working in PyCharm, Jupyter Notebook and Google Collaboratory</li>
+          <li>Git and GitHub</li>
+          <li>REST APIs</li>
+      </ul>
+  </div>
+</section>
+
+<section id="contact">
+<div class="exp-header">
+    <h1 class="pseudo-nav navtext section-header">Contact</h1>
+  </div>
+<div class="contact-content container-fluid">
+    <div class="row">
+
+        <div class="col-sm-4 link-icon"><a href="https://www.linkedin.com/in/ioannis-andreadakis-0a78b5211/"><i class="fab fa-linkedin fa-3x imagaki"></i></a></div>
+        <div class="col-sm-4 link-icon"><a href="https://github.com/ioannisand"><i class="fab fa-github-square fa-3x imagaki"></i></a></div>
+        <div class="col-sm-4 link-icon"><a href="{{url_for('contact')}}"><i class="fas fa-envelope fa-3x imagaki"></i></a></div>
+
+</div>
+    <div class="download-cv">
+        <a style="color:#22577a" class="last" href="{{url_for('view_cv')}}">View Resume</a>
+    </div>
+
+    </div>
+
+
+</section>
+
+
+{% endblock %}
+

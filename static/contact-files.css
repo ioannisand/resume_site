@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    background-color:#22577a;
+}
+
+
+.form-container {
+    margin: 10% 20%;
+    background-color:#38a3a5;
+    border-width: 10px;
+    border-color:#C7F9CC;
+    color:#C7F9CC;
+}

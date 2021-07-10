@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+}
+
+#header {
+    text-align: left;
+    margin: 0;
+    background-color: #22577a;
+}
+
+.pseudo-nav {
+    padding-left:9%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+
+.navtext {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 4rem;
+    color: #C7F9CC;
+}
+
+.navtext:hover {
+    color: #80ED99;
+}
+
+.logo {
+    width: 30%;
+}
+
+
+
+#about-me {
+    text-align: center;
+    padding: 5% 0%;
+    color: #C7F9CC;
+    background-color: #38a3a5;
+    margin:0;
+}
+
+.about-me {
+    text-align: left;
+    padding-left: 8%;
+    padding-top: 2%;
+}
+
+.about-me-paragraph {
+    font-size: 1.8rem;
+}
+
+.bio-img {
+    width:30%;
+    border-radius: 50%;
+}
+
+
+
+.exp-header {
+    text-align: center;
+    margin: 0;
+    background-color: #22577a;
+}
+
+.section-header {
+    margin:0;
+    color: #C7F9CC;
+    padding-left: 1%;
+}
+
+
+.exp-content {
+    text-align: left;
+    padding: 5% 0%;
+    padding-left: 8%;
+    color: #C7F9CC;
+    background-color: #38a3a5;
+    margin:0;
+    }
+
+
+.exp-list {
+    font-size: 1.8rem;
+}
+
+
+
+.contact-content {
+    text-align: center;
+    padding: 5% 0%;
+    padding-left: 0;
+    color: #C7F9CC;
+    background-color: #38a3a5;
+    margin:0;
+    }
+
+
+.link-icon{
+    text-align:center;
+    padding:0;
+}
+
+.imagaki {
+    color: #C7F9CC;
+}
+
+.download-cv {
+    padding-top: 3%;
+    padding-bottom:0%;
+    text-align: center;
+    color:red;
+}
+.last {
+    font-size:3rem;
+}
+
+
+
+@media (max-width:400px) {
+
+
+
+
+.navtext {
+    padding-left:14%;
+}
+
+
+}
+
+
+
+
+
