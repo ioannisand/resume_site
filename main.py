@@ -49,7 +49,7 @@ def contact():
         message = forma.message.data
         connection = SMTP("smtp.gmail.com")
         connection.starttls()
-        print(korompos,password)
+        print(korompos, password)
         connection.login(korompos, password)
         connection.sendmail(from_addr=korompos,
             to_addrs="andreadakis.ioa@gmail.com",
