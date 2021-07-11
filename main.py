@@ -17,7 +17,7 @@ app = Flask(__name__)
 Bootstrap(app)
 app.config["SECRET_KEY"] = os.getenv("secret_key")
 app.config['UPLOAD_FOLDER'] = 'static'
-# ckeditor = CKEditor(app)
+ckeditor = CKEditor(app)
 
 #dummy email creds
 korompos = os.getenv("korobos")
@@ -30,7 +30,7 @@ password = os.getenv("password")
 class ContactForm(FlaskForm):
     name = StringField("Name:", validators=[DataRequired()])
     email = StringField("Email:", validators=[DataRequired(), Email()])
-    message = StringField("Message:", validators=[DataRequired()])
+    message = CKEditorField("Message:", validators=[DataRequired()])
     submit = SubmitField("Send", validators=[DataRequired()])
 
 

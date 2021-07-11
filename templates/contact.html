@@ -11,9 +11,9 @@
 
 <div class="form-container">
     {{ form.csrf_token }}
-<!--    {{ ckeditor.load() }}-->
-<!--    {{ ckeditor.config(name='message') }}-->
-    {{wtf.quick_form(form, novalidate=True)}}
+    {{ ckeditor.load() }}
+    {{ ckeditor.config(name='message') }}
+    {{wtf.quick_form(form)}}
 
 </div>
 
