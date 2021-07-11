@@ -42,21 +42,21 @@ def homepage():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    forma = ContactForm()
-
-    if forma.validate_on_submit():
-        client_name = forma.name.data
-        client_email = forma.email.data
-        message = forma.message.data
-        connection = SMTP("smtp.mailgun.org")
-        connection.starttls()
-        print(korompos, password)
-        connection.login(korompos, password)
-        connection.sendmail(from_addr=korompos,
-            to_addrs="andreadakis.ioa@gmail.com",
-            msg=f"Subject:{client_email}\n\nYou have a message from your website, {client_name} sent you the following message {message}")
-        return redirect(url_for("homepage"))
-    return render_template("contact.html", form=forma)
+    # forma = ContactForm()
+    #
+    # if forma.validate_on_submit():
+    #     client_name = forma.name.data
+    #     client_email = forma.email.data
+    #     message = forma.message.data
+    #     connection = SMTP("smtp.mailgun.org")
+    #     connection.starttls()
+    #     print(korompos, password)
+    #     connection.login(korompos, password)
+    #     connection.sendmail(from_addr=korompos,
+    #         to_addrs="andreadakis.ioa@gmail.com",
+    #         msg=f"Subject:{client_email}\n\nYou have a message from your website, {client_name} sent you the following message {message}")
+    #     return redirect(url_for("homepage"))
+    return render_template("contact.html")
 
 @app.route('/view_cv')
 def view_cv():
