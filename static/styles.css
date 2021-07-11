@@ -115,6 +115,7 @@ body {
     color:red;
 }
 .last {
+padding-left: 2%;
     font-size:3rem;
 }
 
@@ -137,6 +138,13 @@ body {
 max-width: 100%;
 }
 
+.fab {
+    padding-left: 2%;
+}
+
+.last {
+    padding-left:0;
+}
 
 
 
