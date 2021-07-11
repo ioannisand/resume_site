@@ -14,10 +14,11 @@ load_dotenv()
 
 #Initializing app and connecting to bootstrap and ckeditop
 app = Flask(__name__)
-Bootstrap(app)
-app.config["SECRET_KEY"] = os.getenv("secret_key")
+
+app.secret_key = os.getenv("secretkey")
 app.config['UPLOAD_FOLDER'] = 'static'
 ckeditor = CKEditor(app)
+Bootstrap(app)
 
 #dummy email creds
 korompos = os.getenv("korobos")
