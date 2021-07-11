@@ -48,7 +48,7 @@ def contact():
         client_name = forma.name.data
         client_email = forma.email.data
         message = forma.message.data
-        connection = SMTP("smtp.gmail.com")
+        connection = SMTP("smtp.mailgun.org")
         connection.starttls()
         print(korompos, password)
         connection.login(korompos, password)
