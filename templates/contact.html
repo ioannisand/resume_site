@@ -10,9 +10,9 @@
 {% block content %}
 
 <div class="form-container">
-
-    {{ ckeditor.load() }}
-    {{ ckeditor.config(name='message') }}
+    {{ form.csrf_token }}
+<!--    {{ ckeditor.load() }}-->
+<!--    {{ ckeditor.config(name='message') }}-->
     {{wtf.quick_form(form, novalidate=True)}}
 
 </div>
