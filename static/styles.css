@@ -14,7 +14,6 @@ body {
     padding-left:9%;
     padding-top: 3%;
     padding-bottom: 3%;
-
 }
 
 
@@ -56,6 +55,7 @@ body {
 .bio-img {
     width:30%;
     border-radius: 50%;
+    padding-top: 5%;
 }
 
 
@@ -139,12 +139,16 @@ max-width: 100%;
 }
 
 .fab {
-    padding-left: 2%;
+    padding-left: 4%;
 }
 
 .last {
     padding-left:0;
+    color: #00C684;
 }
 
 
+.navtext2 {
 
+    padding-left: 2%;
+}
