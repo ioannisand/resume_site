@@ -60,7 +60,7 @@ def contact():
 
 @app.route('/view_cv')
 def view_cv():
-    return send_from_directory('static', path='files/ioannis-andreadakis-cv.pdf')
+    return send_from_directory('static', path='files/andreadakis-cv.pdf')
 
 
 if __name__ == '__main__':
